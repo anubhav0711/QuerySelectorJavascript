@@ -1,0 +1,37 @@
+<html>
+<head>
+</head>
+<body>
+<div id="div1" style="padding:50px; width:100px; height:100ps; border:1pxsolidbalck;"></div>
+<p>move cursor to color</p>
+<label id="lbl1">blue</label>-----<label id="lbl2">red</label>-----<label id="lbl3">yellow</label>----<input type="text" id="text">
+<script type="text/javascript">
+if(document.querySelector)
+{
+var lbl1=document.querySelector('#lbl1');
+var lbl2=document.querySelector('#lbl2');
+var lbl3=document.querySelector('#lbl3');
+
+
+lbl1.onmouseover=function()
+{
+document.querySelector('#text').value="this is blue color";
+document.querySelector('#text').style.color="blue";
+document.querySelector('#div1').style.background="blue";
+}
+lbl2.onmouseover=function()
+{
+document.querySelector('#text').value="this is red color";
+document.querySelector('#text').style.color="red";
+document.querySelector('#div1').style.background="red";
+}
+lbl3.onmouseover=function()
+{
+document.querySelector('#text').value="this is yellow color";
+document.querySelector('#text').style.color="yellow";
+document.querySelector('#div1').style.background="yellow";
+}
+}
+</script>
+</body>
+</html>
